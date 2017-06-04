@@ -158,6 +158,9 @@ blockquote[lang="en"]:after {
 /* bijace serce w napisie */
 
 .love {
+    overflow: hidden;
+    width:50%;
+    height:200px;
     display: inline-block;
     font-size: 40px;
     margin: 0 0 0 50px;
@@ -165,12 +168,13 @@ blockquote[lang="en"]:after {
 .love span{
     float:left;
     width:7%;
+    margin:20px;
 }
 
 .love span.fa-heart {
     animation-name: pulse;
     animation-duration: 0.7s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 3;
     animation-timing-function: linear;
 }
 
@@ -184,6 +188,32 @@ blockquote[lang="en"]:after {
         font-size:75px;
     }
 }
+
+/* kurtyna opadajaca i wznoszaca na danym divie */
+
+.kurtyna{
+    width:50%;
+    height:400px;
+    background-color: red;
+}
+.gora, .dol{
+    width:100%;
+    height:200px;
+    background-color: green;
+}
+
+/* tlo z efektem parallax */
+
+.parallax{
+    width:100%;
+    height: 500px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/The_Roses_of_Heliogabalus.jpg/400px-The_Roses_of_Heliogabalus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    z-index:-10;
+}
+
 
 
 /* stopka przyklejona do dolnej krawedzi ekranu */
