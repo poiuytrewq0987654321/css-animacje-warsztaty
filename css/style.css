@@ -206,12 +206,27 @@ blockquote[lang="en"]:after {
 
 .parallax{
     width:100%;
-    height: 500px;
+    height: 1000px;
+}
+
+.parallax1{
+    width:100%;
+    height:100%;;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/The_Roses_of_Heliogabalus.jpg/400px-The_Roses_of_Heliogabalus.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
     z-index:-10;
+    position: relative;
+}
+
+.parallax-iner{
+    height:100px;
+    width:100%;
+    top:20%;
+    position: absolute;
+    background-color: red;
+}
+
+parallax2{
+    
 }
 
 

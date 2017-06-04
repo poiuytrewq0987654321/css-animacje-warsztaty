@@ -33,3 +33,38 @@
     color: darkturquoise;
 }
 
+.img-container{
+    width: 300px;
+    height: 300px;
+    border:1px solid red;
+    overflow:hidden;
+}
+
+.img-container .img-background{
+    width:100%;
+    height: 100%;
+    background-image: url(https://pbs.twimg.com/profile_images/447374371917922304/P4BzupWu.jpeg);
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s;
+}
+
+.img-container:hover .img-background{
+    transform: scale(1.5);
+}
+
+/*serce*/
+
+.pulse{
+    color:red;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse{
+    0%,100%{
+    transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+}
