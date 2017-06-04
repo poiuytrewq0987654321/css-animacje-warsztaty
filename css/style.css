@@ -90,7 +90,7 @@ div.form{
 /* zmiana koloru linku do pobierania dla plików doc i docx */
 
 div.linki{
-    height:300px;
+    height:100px;
     width:50%;
     margin: 0 0 50px 50px;
 }
@@ -102,4 +102,31 @@ div.linki{
 .linki a[href$=".docx"]{
     color:green;
 }
+
+/* rozne znaczniki cytatow dla roznych jezykow */
+
+div.cytat{
+    height: 300px;
+    width:50%;
+    margin: 0 0 50px 50px;
+}
+
+
+q:before, blockquote:before{
+    content: '"';    
+}
+
+q:after, blockquote:after{
+    content: '"';    
+}
+
+q[lang="en"]:before, blockquote[lang="en"]:before{
+    content:"*";
+}
+q[lang="en"]:after, blockquote[lang="en"]:after{
+    content:"*";
+}
+
+
+
 
