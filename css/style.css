@@ -5,6 +5,7 @@
     box-sizing: border-box;
     float:left;
     margin:0px;
+    width:100%;
 }
 
 div.outer{
@@ -26,7 +27,7 @@ div.inner{
 }
 
 .clear{
-    float:none;
+    clear:both;
 }
 
 a {
@@ -45,17 +46,35 @@ a:hover {
     color: #fff;
     border: 1px solid cyan;
     background-color: cyan;
+    
 }
 
-i{
-    position: absolute;
+div.circle a#circle i{
     top:25%;
     left:35%;
+    position: absolute;
 }
 
+/* gradient w kolorze tęczy */
 
 
+div.gradient{
+    height:100px;
+    width:100%;
+    background: -webkit-linear-gradient(left, red , yellow, green, blue,  purple);
+}
 
+/* video na 100% okna przegladarki */
+.video{
+    width:100vh;
+}
+
+/* ikony font awesome jako bullety w liscie "li" */
+.bullets{
+    width:50%;
+    height:200px;
+    padding: 50px;
+}
 
 
 
