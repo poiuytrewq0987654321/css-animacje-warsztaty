@@ -1,44 +1,43 @@
 /* div w dive idealnie posrodku */
 
-
 * {
     box-sizing: border-box;
-    float:left;
-    margin:0px;
-    width:100%;
+    float: left;
+    margin: 0px;
+    width: 100%;
 }
 
-div.outer{
+div.outer {
     background: orange;
-    width:200px;
-    height:200px;
-    margin:10px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
 }
 
-div.inner{
+div.inner {
     background: blue;
-    width:100px;
-    height:100px;
-    margin:0;
+    width: 100px;
+    height: 100px;
+    margin: 0;
 }
 
 .inner {
     transform: translate(50%, 50%);
 }
 
-.clear{
-    clear:both;
+.clear {
+    clear: both;
 }
 
 .circle a {
     border: 1px solid cyan;
-    border-radius:50px;
+    border-radius: 50px;
     height: 100px;
     width: 100px;
-    color:cyan;
+    color: cyan;
     margin-right: 30px;
     font-size: 50px;
-    margin:30px;
+    margin: 30px;
     position: relative;
 }
 
@@ -46,87 +45,152 @@ div.inner{
     color: #fff;
     border: 1px solid cyan;
     background-color: cyan;
-    
 }
 
-div.circle a#circle i{
-    top:25%;
-    left:35%;
+div.circle a#circle i {
+    top: 25%;
+    left: 35%;
     position: absolute;
 }
 
+
 /* gradient w kolorze tęczy */
 
-
-div.gradient{
-    height:100px;
-    width:100%;
-    background: -webkit-linear-gradient(left, red , yellow, green, blue,  purple);
+div.gradient {
+    height: 100px;
+    width: 100%;
+    background: -webkit-linear-gradient(left, red, yellow, green, blue, purple);
 }
+
 
 /* video na 100% okna przegladarki */
-.video{
-    width:100vh;
+
+.video {
+    width: 100vh;
 }
 
+
 /* ikony font awesome jako bullety w liscie "li" */
-.bullets{
-    width:50%;
-    height:200px;
+
+.bullets {
+    width: 50%;
+    height: 200px;
     padding: 50px;
 }
 
+
 /* zmiana koloru czcionki placeholder'a w formularzu */
 
-div.form{
-    width:50%;
+div.form {
+    width: 50%;
     margin: 0 0 50px 50px;
 }
 
 ::-webkit-input-placeholder {
-  color: red;
+    color: red;
 }
+
 
 /* zmiana koloru linku do pobierania dla plików doc i docx */
 
-div.linki{
-    height:100px;
-    width:50%;
+div.linki {
+    height: 100px;
+    width: 50%;
     margin: 0 0 50px 50px;
 }
 
-.linki a[href$=".doc"]{
-    color:red;
+.linki a[href$=".doc"] {
+    color: red;
 }
 
-.linki a[href$=".docx"]{
-    color:green;
+.linki a[href$=".docx"] {
+    color: green;
 }
+
 
 /* rozne znaczniki cytatow dla roznych jezykow */
 
-div.cytat{
-    height: 300px;
-    width:50%;
+div.cytat {
+    height: 100px;
+    width: 50%;
     margin: 0 0 50px 50px;
 }
 
-
-q:before, blockquote:before{
-    content: '"';    
+q:before,
+blockquote:before {
+    content: '"';
 }
 
-q:after, blockquote:after{
-    content: '"';    
+q:after,
+blockquote:after {
+    content: '"';
 }
 
-q[lang="en"]:before, blockquote[lang="en"]:before{
-    content:"*";
-}
-q[lang="en"]:after, blockquote[lang="en"]:after{
-    content:"*";
+q[lang="en"]:before,
+blockquote[lang="en"]:before {
+    content: "*";
 }
 
+q[lang="en"]:after,
+blockquote[lang="en"]:after {
+    content: "*";
+}
 
 
+/* zoom fotki w danym dive/kontenerze po najechaniu */
 
+.zoom {
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;
+    margin: 50px;
+    overflow: hidden;
+}
+
+.zoom img {
+    transition: all 0.5s;
+}
+
+.zoom img:hover {
+    transform: scale(1.5);
+}
+
+/* bijace serce w napisie */
+
+.love {
+    display: inline-block;
+    font-size: 40px;
+    margin: 0 0 0 50px;
+}
+.love span{
+    float:left;
+    width:7%;
+}
+
+.love span.fa-heart {
+    animation-name: pulse;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes pulse {
+    0%,100%{
+        font-size:40px;
+        font-size:40px;
+    }
+    50%{
+        font-size:75px;
+        font-size:75px;
+    }
+}
+
+
+/* stopka przyklejona do dolnej krawedzi ekranu */
+
+.footer {
+    background-color: purple;
+    position: fixed;
+    bottom: 0;
+    padding: 0 0 0 50px;
+}
