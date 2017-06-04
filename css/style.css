@@ -1,15 +1,17 @@
-/* moje rozwiązanie */
+/* div w dive idealnie posrodku */
+
 
 * {
     box-sizing: border-box;
     float:left;
-    margin:10px;
+    margin:0px;
 }
 
 div.outer{
     background: orange;
     width:200px;
     height:200px;
+    margin:10px;
 }
 
 div.inner{
@@ -22,3 +24,40 @@ div.inner{
 .inner {
     transform: translate(50%, 50%);
 }
+
+.clear{
+    float:none;
+}
+
+a {
+    border: 1px solid cyan;
+    border-radius:50px;
+    height: 100px;
+    width: 100px;
+    color:cyan;
+    margin-right: 30px;
+    font-size: 50px;
+    margin:30px;
+    position: relative;
+}
+
+a:hover {
+    color: #fff;
+    border: 1px solid cyan;
+    background-color: cyan;
+}
+
+i{
+    position: absolute;
+    top:25%;
+    left:35%;
+}
+
+
+
+
+
+
+
+
+
