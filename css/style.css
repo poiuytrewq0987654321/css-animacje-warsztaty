@@ -30,7 +30,7 @@ div.inner{
     clear:both;
 }
 
-a {
+.circle a {
     border: 1px solid cyan;
     border-radius:50px;
     height: 100px;
@@ -42,7 +42,7 @@ a {
     position: relative;
 }
 
-a:hover {
+.circle a:hover {
     color: #fff;
     border: 1px solid cyan;
     background-color: cyan;
@@ -76,7 +76,30 @@ div.gradient{
     padding: 50px;
 }
 
+/* zmiana koloru czcionki placeholder'a w formularzu */
 
+div.form{
+    width:50%;
+    margin: 0 0 50px 50px;
+}
 
+::-webkit-input-placeholder {
+  color: red;
+}
 
+/* zmiana koloru linku do pobierania dla plików doc i docx */
+
+div.linki{
+    height:300px;
+    width:50%;
+    margin: 0 0 50px 50px;
+}
+
+.linki a[href$=".doc"]{
+    color:red;
+}
+
+.linki a[href$=".docx"]{
+    color:green;
+}
 
